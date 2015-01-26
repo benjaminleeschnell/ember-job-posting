@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------------------------*/
-/*	    
+/*
 /*      Built with blocs
 /*-----------------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-body{
+body {
 	margin:0;
 	padding:0;
     background:#FFF;
@@ -15,9 +15,12 @@ a:hover{text-decoration: none;}
 
 /* Globals type styling */
  h1, h2, h3, h4, h5, h6, p, label, .btn, a{
-	font-family:Roboto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
-
+h3{
+  font-weight: 400;
+}
 
 /* Site container width */
 
@@ -50,7 +53,7 @@ a:hover{text-decoration: none;}
 /* Bloc - Dark theme */
 
 .d-bloc{
-	color:rgba(255,255,255,.7);
+	color:#fff;
 }
 .d-bloc button:hover{
 	color:rgba(255,255,255,.9);
@@ -65,10 +68,7 @@ a:hover{text-decoration: none;}
 	border-color:rgba(255,255,255,.2);
 }
 .d-bloc a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc a:hover{
-	color:rgba(255,255,255,1);
+	color:#fff;
 }
 .d-bloc .navbar-toggle .icon-bar{
 	background:rgba(255,255,255,1);
@@ -88,7 +88,7 @@ a:hover{text-decoration: none;}
 	color:rgba(0,0,0,.7);
 }
 .l-bloc h1,.l-bloc h2,.l-bloc h3,.l-bloc h4,.l-bloc h5, .l-bloc h6, .l-bloc .ico{
-	color:rgba(0,0,0,.7);
+	color:#272727;
 }
 .l-bloc .icon-round{
 	border-color:rgba(0,0,0,.7);
@@ -97,10 +97,10 @@ a:hover{text-decoration: none;}
 	border-color:rgba(0,0,0,.1);
 }
 .l-bloc a{
-	color:rgba(0,0,0,.6);
+	color:#666;
 }
 .l-bloc a:hover{
-	color:rgba(0,0,0,1);
+	color:#272727;
 }
 .l-bloc .navbar-toggle .icon-bar{
 	color:rgba(0,0,0,.6);
@@ -120,44 +120,25 @@ a:hover{text-decoration: none;}
 #story,#footer{
 	background-color:#ffffff;
 }
-#hero-bloc h1{
-	font-size: 50px;
-	font-family: 'Open Sans';
-	font-weight: 600;
-}
-#hero-bloc h3{
-	font-size: 30px;
-	font-family: Open Sans;
-}
-#story h3{
-	font-size: 48px;
-	font-family: 'Open Sans';
-	font-weight: 600;
-}
 #story p{
-	font-size: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
 }
 #story a{
 	text-decoration: underline;
 }
 #description {
-	background-color: #1EB848;
-}
-#description h2{
-	font-size: 36px;
+	background-color: #e6e6e6;
 }
 #description li{
-	font-size: 22px;
+	font-size: 18px;
 }
 
 /* Bloc image backgrounds */
 
 .bg-lpg{
-	background-image:
-	linear-gradient(
-      rgba(51, 102, 284, 0.9), 
-      rgba(51, 102, 284, 0.9)
-      	),url("img/lpg.jpg");
+	background-image: linear-gradient(#000, rgba(0,0,0,0.5)), url("img/lpg.jpg");
 }
 
 /* NavBar */
@@ -280,28 +261,24 @@ a:hover{text-decoration: none;}
 /* Buttons */
 
 .btn{
-	margin: 0 5px 5px 0;
+	margin: 0;
 }
 .btn.pull-right{
 	margin: 0 0 5px 5px;
 }
 .btn-d,.btn-d:hover,.btn-d:focus{
 	color:#FFF!important;
-	background:rgb(0,0,0);
-}
-.btn-wire{
-	background:transparent!important;
-	border:2px solid transparent;
-}
-.btn-wire:hover{
-	background:transparent!importantborder:2px solid transparent;
+	background: #1EB848;
 }
 .btn-xl{
-	padding: 16px 40px;
-	font-size: 28px;
+	padding: 13px 40px;
+	font-size: 15px;
+       background-color: #36c;
+       text-transform: uppercase;
+       border-radius: 5px;
+       color: #fff !important;
 }
 .a-btn{
-	font-size: 14px;
 	font-weight: normal;
 	padding: 6px 10px 6px 0;
 	line-height: 1.42857143;
@@ -315,19 +292,11 @@ a:hover{text-decoration: none;}
 	text-align: left;
 }
 
-
-
-
-
-
-
-
 /*iFrame*/
 
 iframe{
 	border:0;
 }
-
 
 /* Mobile adjustments */
 
@@ -337,8 +306,8 @@ iframe{
         overflow-x: hidden;
     }
     h1,h2,h3,h4,h5,h6,p{
-        padding-left:5px!important; 
-        padding-right:5px!important; 
+        padding-left:5px!important;
+        padding-right:5px!important;
     }
     .bloc{
         text-align: center;
@@ -361,7 +330,7 @@ iframe{
 	   transform:none;
 	   -webkit-transform:none;
 	   -ms-transform:none;
-    }  
+    }
     .nav > li{
         margin-top: 0;
         border-bottom:1px solid rgba(0,0,0,.1);
@@ -381,17 +350,17 @@ iframe{
     .navbar-brand img{
         max-height: 40px;
         width:auto;
-        margin: -10px 5px 0 0;    
+        margin: -10px 5px 0 0;
     }
     .nav-invert .navbar-header{
         float: none;
         width:100%;
     }
     .nav-invert .navbar-toggle{
-        float:left; 
+        float:left;
     }
     .btn.pull-left, .btn.pull-right{
-       float:none!important; 
+       float:none!important;
     }
     .bloc-xl,.bloc-lg{
         padding: 40px 0;
@@ -400,6 +369,6 @@ iframe{
         text-align: center;
     }
     .btn-dwn{
-       display:none; 
+       display:none;
     }
 }
